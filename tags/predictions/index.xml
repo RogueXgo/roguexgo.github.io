@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>predictions on xGo - An expected website</title>
-    <link>https://roguexgo.github.io/tags/predictions/</link>
+    <link>/tags/predictions/</link>
     <description>Recent content in predictions on xGo - An expected website</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Fri, 29 Nov 2019 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://roguexgo.github.io/tags/predictions/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/tags/predictions/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>La Liga - Pronósticos Jornada 23 (01-dic-2019)</title>
-      <link>https://roguexgo.github.io/2019/11/29/la-liga-pron%C3%B3sticos-jornada-23/</link>
+      <link>/2019/11/29/la-liga-pronosticos-jornada-23/</link>
       <pubDate>Fri, 29 Nov 2019 00:00:00 +0000</pubDate>
       
-      <guid>https://roguexgo.github.io/2019/11/29/la-liga-pron%C3%B3sticos-jornada-23/</guid>
-      <description>En la siguiente tabla comparamos los pronósticos 1-x-2 (home-draw-away) de xGo con los de fivethirtyeigth para la jornada de este fin de semana:
+      <guid>/2019/11/29/la-liga-pronosticos-jornada-23/</guid>
+      <description>En la siguiente tabla comparamos los pronósticos 1-x-2 (home-draw-away) de xGo con los de fivethirtyeigth para esta jornada:
 1ª división:
-2ª división:</description>
+matchscoremodhomedrawawayAlavés - Real Madrid1 - 2xGo31%25%44%53816%20%64%Ath Bilbao - Granada2 - 0xGo47%29%24%53853%29%18%At.</description>
     </item>
     
   </channel>
