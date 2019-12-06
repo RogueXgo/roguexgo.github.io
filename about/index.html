@@ -6,11 +6,11 @@
 <meta name="generator" content="Hugo 0.60.1" />
 
 
-<title>About - xGo - An expected website</title>
-<meta property="og:title" content="About - xGo - An expected website">
+<title>Blog de pronósticos de fútbol - xGo - An expected website</title>
+<meta property="og:title" content="Blog de pronósticos de fútbol - xGo - An expected website">
 
 
-  <link href='https://roguexgo.github.io/favicon.ico' rel='icon' type='image/x-icon'/>
+  <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
 
 
 
@@ -19,6 +19,11 @@
 
 
 
+
+
+
+
+<link href='//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css' rel='stylesheet' type='text/css' />
 
 
 
@@ -72,13 +77,43 @@ if (!doNotTrack) {
   <article class="article">
     
 
-    <h1 class="article-title">About</h1>
+    <h1 class="article-title">Blog de pronósticos de fútbol</h1>
 
     
 
     <div class="article-content">
-      <p>Un blog de pronósticos de fútbol.</p>
-<p>The theme was forked from <a href="https://github.com/jrutheiser/hugo-lithium-theme">@jrutheiser/hugo-lithium-theme</a> and modified by <a href="https://github.com/yihui/hugo-lithium">Yihui Xie</a>.</p>
+      
+
+
+<p>En la confección del modelo estadístico ordenamos los datos de manera similar a lo indicado <a href="http://opisthokonta.net/?p=276">aquí</a> (ver <a href="http://opisthokonta.net/wp-content/uploads/2013/02/poissonfotballfix.png">figura</a>) [si bien nuestro modelo es diferente].</p>
+<p>En la ejecución del modelo se obtienen 40.000 simulaciones de cada partido con sus correspondientes valores para:<br />
+- los promedios de goles del equipo de casa y del visitante: mu_HG y mu_AG,<br />
+- las predicciones de goles: sim_HG y sim_AG</p>
+<p>Aquí una muestra (6 primeros valores):</p>
+<pre><code>## Real Madrid - Español</code></pre>
+<pre><code>##      mu_HG     mu_AG sim_HG sim_AG
+## 1 2.138494 0.6207480      1      0
+## 2 2.142981 0.5636912      2      3
+## 3 2.017444 0.4013247      1      0
+## 4 1.947815 0.4827633      2      0
+## 5 2.434997 0.5470918      2      0
+## 6 3.171058 0.5865410      1      0</code></pre>
+<p>y unos estadísticos comunes:</p>
+<pre><code>##         Mean StdDev  2.5% 97.5%
+## mu_HG  2.852  0.701 1.716 4.455
+## mu_AG  0.602  0.175 0.319 0.996
+## sim_HG 2.862  1.836 0.000 7.000
+## sim_AG 0.601  0.794 0.000 3.000</code></pre>
+<p>De la diferencia de promedios (contraste = mu_HG - mu_AG) podemos extraer una función de densidad de probabilidad aproximada:</p>
+<pre><code>##           Mean StdDev 2.5% 97.5%
+## contraste 2.25  0.733 1.03   3.9</code></pre>
+<p><img src="/about_files/figure-html/unnamed-chunk-5-1.png" width="672" /></p>
+<p>y de las predicciones de goles una tabla de frecuencias de marcadores:</p>
+<pre><code>## 
+##  2/0  3/0  1/0  4/0  2/1  3/1  1/1  5/0  4/1  0/0  5/1  6/0 
+## 4914 4608 3920 3233 2975 2585 2231 2026 1905 1539 1185 1064</code></pre>
+<p><img src="/about_files/figure-html/unnamed-chunk-6-1.png" width="672" /></p>
+<p>The theme was forked from <span class="citation">[@jrutheiser/hugo-lithium-theme]</span>(<a href="https://github.com/jrutheiser/hugo-lithium-theme" class="uri">https://github.com/jrutheiser/hugo-lithium-theme</a>) and modified by <a href="https://github.com/yihui/hugo-lithium">Yihui Xie</a>.</p>
 
     </div>
   </article>
@@ -101,6 +136,18 @@ if (!doNotTrack) {
 
     </div>
     
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+
+
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/yaml.min.js"></script>
+<script>hljs.configure({languages: []}); hljs.initHighlightingOnLoad();</script>
+
+
 
     
 
